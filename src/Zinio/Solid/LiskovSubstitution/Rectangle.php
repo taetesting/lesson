@@ -3,9 +3,9 @@ namespace Zinio\Solid\LiskovSubstitution;
 
 class Rectangle
 {
-    private $heigth;
+    protected $heigth;
 
-    private $width;
+    protected $width;
 
     public function setHeight($value)
     {
@@ -29,6 +29,6 @@ class Rectangle
 
     public function area()
     {
-        return $this->width * $this->height;
+        return $this->width * $this->heigth;
     }
 }

@@ -5,13 +5,15 @@ use Zinio\Solid\LiskovSubstitution\Rectangle;
 
 class Square extends Rectangle
 {
-    public function setHeight($value) {
+    public function setHeight($value)
+    {
+        $this->heigth = $value;
         $this->width = $value;
-        $this->height = $value;
     }
- 
-    public function setWidth($value) {
+
+    public function setWidth($value)
+    {
+        $this->heigth = $value;
         $this->width = $value;
-        $this->height = $value;
     }
 }
