@@ -5,7 +5,7 @@ header('Content-Type: text/plain');
 
 use Zinio\Algorithms\ArrayOutputter;
 
-$arr = array(1, 2, 3, array(4, 5, array(6, array(7)), 8), 9);
+$arr = array(1, 2, 3, array(4, 5, array(6, array(7), 8, 9), 10, array(11, 12, array(13))), 14);
 $outputter = new ArrayOutputter($arr);
 $outputter->runWitoutRecursion();
 echo implode('; ', $outputter->getResult());
