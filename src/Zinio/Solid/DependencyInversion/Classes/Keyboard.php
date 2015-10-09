@@ -8,6 +8,12 @@ class Keyboard implements IRead
 {
 	public function read()
 	{
-	    return "Content is read from Keyboard";
+		$file = "Open File Explorer";
+	    return "<{$file}> Content is read from Keyboard";
+	}
+
+	public function openFileExplorer($parameters)
+	{
+	    return "Open File Explorer";
 	}
 }

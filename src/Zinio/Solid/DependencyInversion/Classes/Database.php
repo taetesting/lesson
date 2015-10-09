@@ -8,6 +8,6 @@ class Database implements IWrite
 {
 	public function write($content)
 	{
-	    echo "\" {$content} \" has written into Database";
+	    echo "\"{$content}\" has written into Database";
 	}
 }

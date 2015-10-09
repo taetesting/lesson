@@ -8,6 +8,6 @@ class Printer implements IWrite
 {
 	public function write($content)
 	{
-	    return "\" {$content} \" has written by Printer";
+	    echo "\"{$content}\" has written by Printer";
 	}
 }
