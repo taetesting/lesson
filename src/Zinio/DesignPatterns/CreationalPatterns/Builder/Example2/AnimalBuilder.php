@@ -6,7 +6,7 @@ abstract class AnimalBuilder
     /**
      * Animal
      */
-    private $animal;
+    public $animal;
     
     abstract public function buildAnimalHead($head);
     abstract public function buildAnimalBody($body);

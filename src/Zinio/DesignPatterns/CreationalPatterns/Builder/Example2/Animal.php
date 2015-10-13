@@ -3,11 +3,11 @@ namespace Zinio\DesignPatterns\CreationalPatterns\Builder\Example2;
 
 abstract class Animal
 {
-    private $head;
-    private $body;
-    private $arms;
-    private $legs;
-    private $tail;
+    public $head;
+    public $body;
+    public $arms;
+    public $legs;
+    public $tail;
 
     abstract public function setHead($value);
     abstract public function getHead();

@@ -23,6 +23,7 @@ class Kid
 
 	public function getAnimal()
 	{
-	    return $this->builder;
+		// var_dump($this->builder->animal);die;
+	    return $this->builder->animal;
 	}
 }

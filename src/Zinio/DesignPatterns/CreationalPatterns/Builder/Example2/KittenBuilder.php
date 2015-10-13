@@ -19,21 +19,21 @@ class KittenBuilder extends AnimalBuilder
     
     public function buildAnimalBody($body)
     {
-        $this->animal->setHead($body);
+        $this->animal->setBody($body);
     }
 
     public function buildAnimalArms($arms)
     {
-        $this->animal->setHead($arms);
+        $this->animal->setArms($arms);
     }
 
     public function buildAnimalLegs($legs)
     {
-        $this->animal->setHead($legs);
+        $this->animal->setLegs($legs);
     }
 
     public function buildAnimalTail($tail)
     {
-        $this->animal->setHead($tail);
+        $this->animal->setTail($tail);
     }
 }

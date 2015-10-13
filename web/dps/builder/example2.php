@@ -11,20 +11,18 @@ require __DIR__ . '/../../../vendor/autoload.php';
 use Zinio\DesignPatterns\CreationalPatterns\Builder\Example2\Kid;
 use Zinio\DesignPatterns\CreationalPatterns\Builder\Example2\AnimalBuilder;
 use Zinio\DesignPatterns\CreationalPatterns\Builder\Example2\KittenBuilder;
-// use Zinio\DesignPatterns\CreationalPatterns\Builder\Example1\HTMLPageDirector;
 
 writeln('BEGIN TESTING BUILDER PATTERN');
 writeln('');
 
-$kittenBuilder = new KittenBuilder();
-$kid = new Kid($kittenBuilder);
+$kid = new Kid(new KittenBuilder());
 $kid->makeAnimal();
 $kitten = $kid->getAnimal();
-echo implode('<br/>', $kitten->showMe());
+$info = $kitten->showMe();
+echo implode('<br/>', $info);
 writeln('');
 echo $kitten->eat();
 writeln('');
-
 
 writeln('');
 writeln('END TESTING BUILDER PATTERN');

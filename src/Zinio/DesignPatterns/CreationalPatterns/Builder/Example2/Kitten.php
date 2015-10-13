@@ -12,7 +12,7 @@ class Kitten extends Animal
 
     public function getHead()
     {
-        return $this->legs;
+        return $this->head;
     }
 
     public function setBody($value)
@@ -22,7 +22,7 @@ class Kitten extends Animal
 
     public function getBody()
     {
-        return $this->legs;
+        return $this->body;
     }
 
     public function setArms($value)
@@ -32,7 +32,7 @@ class Kitten extends Animal
 
     public function getArms()
     {
-        return $this->legs;
+        return $this->arms;
     }
 
     public function setLegs($value)
