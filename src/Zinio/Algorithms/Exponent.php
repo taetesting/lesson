@@ -4,13 +4,14 @@ namespace Zinio\Algorithms;
 class Exponent
 {
     private $times;
+    private $result;
 
     public function run($a, $n, $reset = true)
     {
         if ($reset == true) {
             $this->resetTimes();
         }
-        $this->recursiveImproved($a, $n);
+        $this->result = $this->recursiveImproved($a, $n);
     }
 
     public function runTradition($a, $n, $reset = true)
@@ -18,7 +19,7 @@ class Exponent
         if ($reset == true) {
             $this->resetTimes();
         }
-        $this->recursiveTradition($a, $n);
+        $this->result = $this->recursiveTradition($a, $n);
     }
 
     private function recursiveTradition($a, $n)
@@ -38,7 +39,7 @@ class Exponent
             return 1;
         } else {
             $p = $this->recursiveImproved($a, $n / 2);
-            if ($n % 2) {
+            if ($n % 2 == 0) {
                 return $p * $p;
             } else {
                 return $p * $p * $a;
@@ -54,5 +55,10 @@ class Exponent
     public function resetTimes()
     {
         $this->times = 0;
+    }
+
+    public function getResult()
+    {
+        return $this->result;
     }
 }
