@@ -5,7 +5,7 @@
 
 ## MYSQL
 1. Pull image from hub 
-``sudo docker pull mysql``
+> sudo docker pull mysql
 2. sudo docker run -p 3306:3306 --name db -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
 3. Can you test mysql with command 
 ```mysql -uroot -p -h 127.0.0.1 -P 3900```
